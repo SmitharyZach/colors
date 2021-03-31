@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.gridContainer {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "color1 color2 color3 color4 color5"
+    "button1 button2 button3 button4 button5"
+    ". lock lock lock .";
+}
+
+.grid-item1 {
+  height: 600px;
+  background-color: aqua;
+  grid-area: color1;
+}
+
+.grid-item2 {
+  height: 600px;
+  background-color: aqua;
+  grid-area: color2;
+}
+
+.grid-item3 {
+  height: 600px;
+  background-color: aqua;
+  grid-area: color3;
+}
+
+.grid-item4 {
+  height: 600px;
+  background-color: aqua;
+  grid-area: color4;
+}
+
+.grid-item5 {
+  height: 600px;
+  background-color: aqua;
+  grid-area: color5;
+}
+
+.button-item1 {
+  height: 50;
+  margin: 10px;
+  background-color: grey;
+  grid-area: button1;
+}
+
+.button-item2 {
+  height: 50;
+  margin: 10px;
+
+  background-color: grey;
+  grid-area: button2;
+}
+
+.button-item3 {
+  height: 50;
+  margin: 10px;
+
+  background-color: grey;
+  grid-area: button3;
+}
+
+.button-item4 {
+  height: 50;
+  margin: 10px;
+
+  background-color: grey;
+  grid-area: button4;
+}
+
+.button-item5 {
+  height: 50px;
+  margin: 10px;
+  background-color: grey;
+  grid-area: button5;
+}
+
+.button-lock {
+  height: 50px;
+  background-color: green;
+  grid-area: lock;
 }
